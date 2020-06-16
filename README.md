@@ -42,8 +42,8 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+Closure is the process of defining variables inside a scope with the intention of having it garbage collected after the scope is executed. 
 2. Study the following code, then answer the questions below.
-
 ```js
 function personalDice(name){
   return function(){
@@ -63,8 +63,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+"const newRoll..." is where closure is used to randomize the scope everytime its executed.
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
-c. What is the lexical scope of `newRoll`? 
+The output log format will always be the same, the newRoll portion of the output could change.
+c. What is the lexical scope of `newRoll`?
+Line 49 - "return function(){}"
 
 ### Task 2c - Exit Ticket
 
